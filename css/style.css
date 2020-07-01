@@ -1,0 +1,207 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2{font-size: 30px;font-weight:400;} h3{font-size:18px;font-weight:500;} p{font-size:14px;} a{font-weight: 400;font-size: 18px;}
+
+.header {
+	padding: 10px 0;
+}
+
+.header .header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .header_wrapper .nav {
+	margin: 0 auto;
+}
+
+.header .header_wrapper .nav .menu {
+	padding-left: 0;
+	display: flex;
+	list-style: none;	
+}
+
+.header .header_wrapper .nav .menu .menu_item {
+	margin: 0 7px;
+	position: relative;
+	font-size: 16px;
+}
+
+.menu li:after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 22px;
+	margin-left: 7px;
+	background-color: #B7B7B7;
+	transform: rotate(25deg);
+}
+
+.menu li:last-child:after {
+	display: none;
+}
+
+.header .header_wrapper .nav .menu .menu_item .menu_link {
+	color: #000;	
+}
+
+.header .header_wrapper .search {
+	margin-right: 16px;
+	border: none;
+	width: 20px;
+	height: 20px;
+	background: url('../img/icons/search.svg');
+}
+
+.header .header_wrapper .search:focus {
+	outline: none;
+}
+
+.tel {
+	display: flex;
+	flex-direction: column;
+}
+
+.header .header_wrapper .tel .tel-number {
+	color: #338391;
+}
+
+.header .header_wrapper .tel .tel-free-call {
+	color: #777;
+	text-align: center;
+	font-size: 14px;
+}
+
+.banner {
+	padding: 170px 0 30px;
+	
+	background: url('../img/bg/banner_bg.jpg') center center/cover no-repeat;
+}
+
+.banner .banner_title {
+	width: 390px;
+	margin: 0 auto 0;
+	
+	color: #fff;
+}
+
+.banner .banner_btn {
+	display: block;
+	padding: 10px 20px;
+	margin: 80px auto 0;
+	
+	color: #fff;
+	background: none;
+	border-radius: 10px;
+	border: 2px solid #fff;
+}
+
+.banner .banner_btn:hover {
+	background-color: rgba( 0, 0, 0, 0.3); 
+}
+
+.banner .ellipce {
+	margin: 90px auto  0;
+	 display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .ellipce .ellipce_item {
+	margin: 4px;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.banner .ellipce .ellipce_item:hover {
+	box-shadow: 0 0 0 3px rgba( 0, 0, 0, 0.3);
+}
+
+.services {
+	padding: 50px 0;
+}
+
+.services .services_wrapper .services_item .services_link {
+	display: block;
+	width: 0;
+	height: 78px;
+	margin-bottom: 10px;
+}
+
+.services .services_wrapper .services_item .services_link .services_title {
+	position: relative;
+}
+
+.services .services_wrapper .services_item:first-of-type .services_link .services_title {
+	color: #338391;
+	width: 100px;
+}
+
+.services .services_wrapper .services_item:first-of-type .services_link .services_title:before {
+	position: absolute;
+	left: -38px;
+	top: -20%;
+	content: "";
+	width: 18px;
+	height: 110px;
+	background-image: url('../img/bent_line_blue.svg');
+}
+
+.services .services_wrapper .services_item:nth-of-type(2) .services_link .services_title {
+	color: #FF9909;
+	width: 145px;
+}
+
+.services .services_wrapper .services_item:nth-of-type(2) .services_link .services_title:before {
+	position: absolute;
+	left: -38px;
+	top: -20%;
+	content: "";
+	width: 18px;
+	height: 110px;
+	background-image: url('../img/bent_line_yellow.svg');
+}
+
+.services .services_wrapper .services_item:nth-of-type(3) .services_link .services_title {
+	color: #46A178;
+	width: 116px;
+}
+
+.services .services_wrapper .services_item:nth-of-type(3) .services_link .services_title:before {
+	position: absolute;
+	left: -38px;
+	top: -20%;
+	content: "";
+	width: 18px;
+	height: 110px;
+	background-image: url('../img/bent_line_green.svg');
+}
+
+.services .services_wrapper .services_item:last-of-type .services_link .services_title {
+	color: #5B5B5B;
+	width: 182px;
+}
+
+.services .services_wrapper .services_item:last-of-type .services_link .services_title:before {
+	position: absolute;
+	left: -38px;
+	top: -20%;
+	content: "";
+	width: 18px;
+	height: 110px;
+	background-image: url('../img/bent_line_grey.svg')
+}
+
+.services .services_wrapper .services_item p {
+	margin-bottom: 6px;
+	color: #5B5B5B;
+}
