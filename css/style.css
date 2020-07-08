@@ -4792,6 +4792,10 @@ template {
     font-size: 18px;
   }
 
+  .make__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .make__item {
     font-size: 14px;
     margin-right: 15px;
@@ -4799,6 +4803,10 @@ template {
 
   .works__item:first-of-type {
     display: none;
+  }
+  .blog__wrapper {
+    margin-left: 0;
+    margin-right: 0;
   }
   .blog__article {
     display: flex;
