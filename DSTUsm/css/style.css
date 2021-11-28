@@ -243,106 +243,104 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 768px) {
-  body {
-    background: no-repeat url("../img/bg/login_bg.jpg");
-    background-size: 100%;
-  }
+body {
+  background: no-repeat url("../img/bg/login_bg.jpg");
+  background-size: 100%;
+}
 
-  h1 {
-    font-size: 42px;
-    font-weight: 400;
-  }
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
 
-  h2 {
-    font-size: 38px;
-    font-weight: 500;
-  }
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+}
 
-  h3 {
-    font-size: 34px;
-    font-weight: 400;
-  }
+h3 {
+  font-size: 34px;
+  font-weight: 400;
+}
 
-  p {
-    font-size: 30px;
-    font-weight: 400;
-  }
+p {
+  font-size: 30px;
+  font-weight: 400;
+}
 
-  .header {
-    background-color: #404E67;
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
-  .header h2 {
-    text-align: center;
-    color: #fff;
-  }
+.header {
+  background-color: #404E67;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.header h2 {
+  text-align: center;
+  color: #fff;
+}
 
-  .content h3 {
-    color: #fff;
-    text-align: center;
-    margin-top: 60px;
-  }
-  .content .logo img {
-    display: block;
-    margin: 60px auto;
-  }
-  .content .sign-in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
-    padding: 20px 40px;
-    margin: 60px 50px 0px 50px;
-    font-size: 38px;
-    font-weight: 400;
-    border-radius: 10px;
-    border: 3px solid #7E7E7E;
-    -webkit-box-shadow: inset 0px 5px #DEDEDE;
-            box-shadow: inset 0px 5px #DEDEDE;
-    color: #4D4D4D;
-  }
-  .content .sign-in input:last-child {
-    background-color: #404E67;
-    color: #fff;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: none;
-  }
-  .content .quick-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 40px;
-  }
+.content h3 {
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+.content .logo img {
+  display: block;
+  margin: 60px auto;
+}
+.content .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
+  padding: 20px 40px;
+  margin: 60px 50px 0px 50px;
+  font-size: 38px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 3px solid #7E7E7E;
+  -webkit-box-shadow: inset 0px 5px #DEDEDE;
+          box-shadow: inset 0px 5px #DEDEDE;
+  color: #4D4D4D;
+}
+.content .sign-in input:last-child {
+  background-color: #404E67;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.content .quick-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+}
 
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 20px;
-  }
-  .footer a {
-    margin-top: 40px;
-    color: #D4D3D9;
-    text-align: center;
-  }
-  .footer a:first-child {
-    font-size: 38px;
-  }
-  .footer a:last-child {
-    font-size: 34px;
-  }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.footer a {
+  margin-top: 40px;
+  color: #D4D3D9;
+  text-align: center;
+}
+.footer a:first-child {
+  font-size: 38px;
+}
+.footer a:last-child {
+  font-size: 34px;
 }
