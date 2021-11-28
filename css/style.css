@@ -4174,7 +4174,7 @@ template {
   transform: translateX(-50%);
 }
 .banner .tns-outer .tns-nav .tns-nav-active {
-  background-color: #fff;
+  -color: #fff;
 }
 .banner .tns-outer .tns-nav button {
   background-color: #eee;
