@@ -273,12 +273,16 @@ template {
     background-color: #404E67;
     padding-top: 52px;
     padding-bottom: 52px;
+    width: 620px;
   }
   .header h2 {
     text-align: center;
     color: #fff;
   }
 
+  .content {
+    width: 620px;
+  }
   .content h3 {
     color: #fff;
     text-align: center;
@@ -333,6 +337,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 20px;
+    width: 620px;
   }
   .footer a {
     margin-top: 40px;
