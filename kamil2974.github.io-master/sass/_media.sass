@@ -1,0 +1,200 @@
+@media (max-width: 991px)
+	.header
+
+		&__logo
+			img
+				order: 1
+
+		&__menu
+			display: none
+
+		&__search
+			order: 3
+			margin: 0
+
+		&__tel
+			order: 2
+
+	.banner
+		.prev, .next
+			display: none
+
+
+	.services
+
+		&__item_bottom
+			margin-top: 60px
+
+		&__title
+			width: 100px
+			a
+
+	.make
+		text-align: center
+
+		&__item
+			&:before
+				content: none
+
+		&__macbook
+			img
+				display: none
+
+	.works
+
+		&__wrapper
+			justify-content: space-around
+
+		&__item
+			&:last-of-type
+				display: none
+
+		&__link
+			margin-top: 60px
+
+	.blog
+
+		&__article
+			&:first-of-type
+				display: none
+
+	.application
+
+		&__form
+			flex-direction: column
+
+			input
+				width: 90%
+				margin: 10px 0
+				text-align: center
+
+	.footer
+		padding: 50px 0
+
+		&__address_wrapper
+
+			a
+				font-size: 14px
+				color: $link_footer_color
+				width: 297px
+				&:visited
+					color: $link_footer_color
+
+		&__social
+
+		&__copyright
+			padding: 0
+			line-height: 16px
+
+@media (max-width: 768px)
+
+	.blog
+
+		&__article
+			&:last-of-type
+				display: none
+
+			&_text
+
+	.application
+
+		&__title
+			text-align: center
+
+	.footer
+		padding: 50px 15px
+
+		&__address_wrapper
+
+			a
+				font-size: 14px
+				color: $link_footer_color
+				width: 297px
+				&:visited
+					color: $link_footer_color
+
+		&__social
+			margin-top: 20px
+		&__copyright
+			margin-top: 20px
+			padding: 6px 10px
+			line-height: 20px
+
+@media (max-width: 576px)
+
+	.header
+
+		&__tel
+			display: none
+
+	.banner
+		&__title
+			font-size: 20px
+
+	.services
+
+		&__item
+
+			text-align: center
+			&:nth-of-type(2), &:nth-of-type(3), &:last-of-type
+				display: none
+				
+
+		&__title
+			width: 100%
+			height: auto
+			margin: 0 auto 20px
+			a
+			&:before
+				content: none
+		
+		&__text
+			font-size: 18px
+
+	.make
+
+		&__wrapper
+			margin-left: 0
+			margin-right: 0
+
+		&__item
+			font-size: 14px
+			margin-right: 15px
+
+	.works
+
+		&__item
+			&:first-of-type
+				display: none
+
+		&__link
+
+	.blog
+
+		&__wrapper
+			margin-left: 0
+			margin-right: 0
+
+		&__article
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+
+			&_text
+				width: 250px
+				text-align: center
+
+			&_date
+			width: 250px
+			text-align: center
+
+	.blog__article.col-lg-4
+		padding-left: 0
+		padding-right: 0
+		margin-left: auto
+		margin-right: auto
+
+	.footer
+		&__nav
+			display: none
