@@ -421,7 +421,7 @@ p {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 20px 0 0 25px;
+    margin: 20px 0 0 55px;
   }
 
   .footer {
