@@ -278,6 +278,17 @@ p {
   color: #fff;
 }
 
+.content .logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 .content h3 {
   color: #fff;
   text-align: center;
@@ -296,10 +307,27 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.content .sign-in div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content .sign-in div input {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  cursor: pointer;
+  font-size: 38px;
+}
+.content .sign-in div label {
+  font-size: 17px;
+  margin-bottom: -5px;
+}
 .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
   padding: 20px 40px;
   margin: 60px 50px 0px 50px;
-  font-size: 38px;
   font-weight: 400;
   border-radius: 10px;
   border: 3px solid #7E7E7E;
@@ -347,7 +375,7 @@ p {
 
 @media (max-width: 768px) {
   img {
-    width: 35%;
+    width: 67px;
   }
 
   h1 {
@@ -398,18 +426,20 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
-    padding: 10px 20px;
-    margin: 30px 25px 0px 25px;
+  .content .sign-in input {
     font-size: 19px;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 2px solid #7E7E7E;
-    -webkit-box-shadow: inset 0px 2px #DEDEDE;
-            box-shadow: inset 0px 2px #DEDEDE;
+  }
+  .content .sign-in .checkbox_wrapper {
+    color: #fff;
+  }
+  .content .sign-in .checkbox_wrapper .checkbox {
+    padding: 10px 20px;
+    margin: 30px 25px 0px 65px;
+    -webkit-box-shadow: inset 0px 0px #DEDEDE;
+            box-shadow: inset 0px 0px #DEDEDE;
     color: #4D4D4D;
   }
-  .content .sign-in input:last-child {
+  .content .sign-in .checkbox_wrapper:last-child {
     background-color: #404E67;
     color: #fff;
     -webkit-box-shadow: none;

@@ -31,6 +31,12 @@ p
 
 .content
 
+	.logo_wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+
+	
 	h3
 		color: #fff
 		text-align: center
@@ -45,12 +51,21 @@ p
 	.sign-in
 		display: flex
 		flex-direction: column
+		div
+			display: flex
+			align-items: flex-end
+			input
+				transform: scale(3)
+				cursor: pointer
+				font-size: 38px
+			label
+				font-size: 17px
+				margin-bottom: -5px
 		input
 
 			&:first-child, &:nth-child(2), &:last-child
 				padding: 20px 40px
 				margin: 60px 50px 0px 50px
-				font-size: 38px
 				font-weight: 400
 				border-radius: 10px
 				border: 3px solid #7E7E7E
@@ -82,8 +97,9 @@ p
 			font-size: 34px
 
 @media (max-width: 768px)
+
 	img
-		width: 35%
+		width: 67px
 
 	h1
 		font-size: 21px
@@ -126,15 +142,13 @@ p
 			display: flex
 			flex-direction: column
 			input
-
-				&:first-child, &:nth-child(2), &:last-child
+				font-size: 19px
+			.checkbox_wrapper
+				color: #fff
+				.checkbox
 					padding: 10px 20px
-					margin: 30px 25px 0px 25px
-					font-size: 19px
-					font-weight: 400
-					border-radius: 5px
-					border: 2px solid #7E7E7E
-					box-shadow: inset 0px 2px #DEDEDE
+					margin: 30px 25px 0px 65px
+					box-shadow: inset 0px 0px #DEDEDE
 					color: #4D4D4D
 
 				&:last-child

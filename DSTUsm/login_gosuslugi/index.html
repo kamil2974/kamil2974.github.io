@@ -16,20 +16,23 @@
 
         <main class="content">
             <h3>Добро пожаловать!</h3>
-            <div class="logo">
-                <img src="img/icons/dstu_logo.png" alt="#">
+            <div class="logo_wrapper">
+                <div class="logo">
+                    <img src="img/icons/dstu_logo.png" alt="#">
+                </div>
+                <div class="logo">
+                    <img src="img/icons/gosuslugi_logo.png" alt="#">
+                </div>
             </div>
-            
             <form class="sign-in" action="">
                 <input type="text" placeholder="Логин или номер зачетной книжки">
                 <input type="password" placeholder="Пароль">
+                <div class="checkbox_wrapper">
+                <input type="checkbox" id="checkbox" class="checkbox"> <label for="checkbox"> Не запоминать логин и пароль</label>
+                </div>
                 <input type="submit" value="Войти">
             </form>
-            <div class ="quick-login">
-                <a class="icon-gosuslugi" href="#"><img src="img/icons/gosuslugi_logo.png"alt="#"></a>
-                <a class="icon-vk" href="#"><img src="img/icons/vk_logo.png" alt="#"></a>
-                <a class="icon-google" href="#"><img src="img/icons/google_logo.png" alt="#"></a>
-            </div>
+            
             <footer class="footer">
                 <a href="#">Регистрация</a>
                 <a href="#">Забыли пароль?</a>
