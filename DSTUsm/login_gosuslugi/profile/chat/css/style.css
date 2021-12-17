@@ -243,11 +243,6 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background: no-repeat url("../img/bg/login_bg.jpg");
-  background-size: cover;
-}
-
 h1 {
   font-size: 42px;
   font-weight: 400;
@@ -272,13 +267,6 @@ p {
   background-color: #404E67;
   padding-top: 52px;
   padding-bottom: 52px;
-}
-.header h2 {
-  text-align: center;
-  color: #fff;
-}
-
-.content .logo_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,12 +276,18 @@ p {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.content h3 {
-  color: #fff;
+.header h2 {
   text-align: center;
-  margin-top: 60px;
+  color: #fff;
 }
+.header .logo {
+  width: 60px;
+}
+
 .content .logo img {
   display: block;
   margin: 60px auto;
@@ -307,27 +301,10 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.content .sign-in div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.content .sign-in div input {
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  cursor: pointer;
-  font-size: 38px;
-}
-.content .sign-in div label {
-  font-size: 17px;
-  margin-bottom: -5px;
-}
 .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
-  padding: 20px 40px;
+  padding: 10px 20px;
   margin: 60px 50px 0px 50px;
+  font-size: 38px;
   font-weight: 400;
   border-radius: 10px;
   border: 3px solid #7E7E7E;
@@ -342,42 +319,47 @@ p {
           box-shadow: none;
   border: none;
 }
-.content .sign-in .checkbox_wrapper {
-  color: #fff;
-}
-.content .sign-in .checkbox_wrapper .checkbox {
-  -webkit-box-shadow: inset 0px 0px #DEDEDE;
-          box-shadow: inset 0px 0px #DEDEDE;
-  margin: 30px 25px 0px 65px;
-}
-
-.footer {
+.content .convo {
+  margin-top: 30px;
+  margin-left: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.footer a {
-  margin-top: 40px;
-  color: #D4D3D9;
-  text-align: center;
+.content .convo .text {
+  margin-left: 30px;
 }
-.footer a:first-child {
-  font-size: 38px;
+.content .convo .text .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
 }
-.footer a:last-child {
-  font-size: 34px;
+.content .convo .text .line .name {
+  color: #000;
+  font-weight: 500;
+}
+.content .convo .text .line .user {
+  color: #237E0D;
+  position: relative;
+}
+.content .convo .text .line .message {
+  color: #969696;
+}
+.content .convo .text .line .time {
+  color: #969696;
+  font-size: 26px;
 }
 
 @media (max-width: 768px) {
-  img {
-    width: 67px;
-  }
-
   h1 {
     font-size: 21px;
     font-weight: 400;
@@ -407,12 +389,13 @@ p {
     text-align: center;
     color: #fff;
   }
-
-  .content h3 {
-    color: #fff;
-    text-align: center;
-    margin-top: 30px;
+  .header .logo img {
+    width: 100%;
   }
+  .header .burger img {
+    width: 50%;
+  }
+
   .content .logo img {
     display: block;
     margin: 30px auto;
@@ -426,40 +409,31 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .content .sign-in input {
-    font-size: 19px;
-  }
-  .content .sign-in .checkbox_wrapper .checkbox {
+  .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
     padding: 10px 20px;
+    margin: 30px 25px 0px 25px;
+    font-size: 19px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 2px solid #7E7E7E;
+    -webkit-box-shadow: inset 0px 2px #DEDEDE;
+            box-shadow: inset 0px 2px #DEDEDE;
     color: #4D4D4D;
   }
-  .content .sign-in .checkbox_wrapper:last-child {
+  .content .sign-in input:last-child {
     background-color: #404E67;
     color: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
   }
-
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 10px;
+  .content .convo .avatar img {
+    width: 70%;
   }
-  .footer a {
-    margin-top: 20px;
-    color: #D4D3D9;
-    text-align: center;
+  .content .convo .text {
+    margin-left: 0;
   }
-  .footer a:first-child {
-    font-size: 19px;
-  }
-  .footer a:last-child {
-    font-size: 17px;
+  .content .convo .text .line .time {
+    font-size: 13px;
   }
 }
