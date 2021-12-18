@@ -316,8 +316,8 @@ p {
           align-items: flex-end;
 }
 .content .sign-in div input {
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   cursor: pointer;
   font-size: 38px;
 }
@@ -326,10 +326,10 @@ p {
   margin-bottom: -5px;
 }
 .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
-  padding: 20px 40px;
-  margin: 60px 50px 0px 50px;
+  padding: 10px 20px;
+  margin: 30px 35px 0px 35px;
   font-weight: 400;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 3px solid #7E7E7E;
   -webkit-box-shadow: inset 0px 5px #DEDEDE;
           box-shadow: inset 0px 5px #DEDEDE;
@@ -348,7 +348,7 @@ p {
 .content .sign-in .checkbox_wrapper .checkbox {
   -webkit-box-shadow: inset 0px 0px #DEDEDE;
           box-shadow: inset 0px 0px #DEDEDE;
-  margin: 30px 25px 0px 65px;
+  margin: 20px 20px 0px 50px;
 }
 
 .footer {
