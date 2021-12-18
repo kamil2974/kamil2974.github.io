@@ -322,7 +322,7 @@ p {
   font-size: 38px;
 }
 .content .sign-in div label {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: -5px;
 }
 .content .sign-in input:first-child, .content .sign-in input:nth-child(2), .content .sign-in input:last-child {
@@ -348,7 +348,7 @@ p {
 .content .sign-in .checkbox_wrapper .checkbox {
   -webkit-box-shadow: inset 0px 0px #DEDEDE;
           box-shadow: inset 0px 0px #DEDEDE;
-  margin: 20px 20px 0px 50px;
+  margin: 20px 10px 0px 50px;
 }
 
 .footer {
