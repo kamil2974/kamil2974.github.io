@@ -441,6 +441,10 @@ p {
             box-shadow: none;
     border: none;
   }
+  
+  .content .personal_info .text {
+    margin-left: -50px;
+  }
 
   .footer {
     display: -webkit-box;
