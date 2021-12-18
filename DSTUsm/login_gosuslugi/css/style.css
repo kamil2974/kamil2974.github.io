@@ -428,6 +428,7 @@ p {
   }
   .content .sign-in input {
     font-size: 19px;
+    margin: 30px 50px 0px 50px;
   }
   .content .sign-in .checkbox_wrapper .checkbox {
     padding: 10px 20px;
