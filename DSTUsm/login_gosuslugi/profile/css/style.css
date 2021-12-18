@@ -428,7 +428,7 @@ p {
   }
   .content .sign-in input {
     padding: 10px 20px;
-    margin: 30px 200px 0px 200px;
+    margin: 30px 50px 0px 50px;
     font-size: 19px;
     font-weight: 400;
     border-radius: 5px;
@@ -437,6 +437,10 @@ p {
             box-shadow: inset 0px 2px #DEDEDE;
     color: #fff;
     background-color: #404E67;
+  }
+  
+  .content .personal_info .text {
+    margin-left: -50px;
   }
   .content .personal_info .text .online::after {
     width: 10px;
