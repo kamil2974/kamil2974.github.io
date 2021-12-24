@@ -348,7 +348,7 @@ p {
 .content .sign-in .checkbox_wrapper .checkbox {
   -webkit-box-shadow: inset 0px 0px #DEDEDE;
           box-shadow: inset 0px 0px #DEDEDE;
-  margin: 20px 10px 0px 50px;
+  margin: 20px 10px 0px 40px;
 }
 
 .footer {
@@ -428,7 +428,6 @@ p {
   }
   .content .sign-in input {
     font-size: 19px;
-    margin: 30px 50px 0px 50px;
   }
   .content .sign-in .checkbox_wrapper .checkbox {
     padding: 10px 20px;
@@ -440,10 +439,6 @@ p {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
-  }
-  
-  .content .personal_info .text {
-    margin-left: -50px;
   }
 
   .footer {

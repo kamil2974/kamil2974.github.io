@@ -26,13 +26,15 @@ p
 	padding-bottom: 52px
 	display: flex
 	flex-direction: row
-	justify-content: space-around
+	// justify-content: space-around
 	align-items: center
 	h2
-		text-align: center
+		margin-left: 55px
+		margin-right: auto
 		color: #fff
 	.logo
 		width: 60px
+		margin-left: 20px
 .content
 
 	h3
@@ -73,6 +75,7 @@ p
 				color: $info_color
 				position: relative
 				margin-top: 20px
+				z-index: -1
 				&::after
 					position: absolute
 					margin-left: 8px
@@ -89,7 +92,7 @@ p
 				margin-top: 20px
 	.facult_info
 		margin-left: 20px
-		margin-top: 60px
+		margin-top: 40px
 		&_item
 			display: flex
 			flex-direction: row
@@ -134,7 +137,94 @@ p
 		.logo
 			img
 				width: 100%
+		.menu
+			position: fixed
+			top: 0
+			right: -100%
+			width: 70%
+			height: 100vh
+			padding: 100px 25px
+			background-color: rgba(64, 78, 103, 0.9)
+			text-align: right
+			list-style-type: none
+			transition: 0.6s all
+			&_active
+				right: 0
+			&_item
+				padding-right:0
+				border: none
+				margin-bottom: 30px
+				margin-right: 50px
+				&::after
+					position: absolute
+					margin-left: 20px
+					content: ""
+					width: 25px
+					height: 25px
+				&_lk
+					&::after
+						width: 19px
+						background-image: url(../img/icons/1.svg)
+				&_chats
+					&::after
+						height: 23px
+						background-image: url(../img/icons/2.svg)
+				&_news
+					&::after
+						width: 12.74px
+						background-image: url(../img/icons/3.svg)
+				&_events
+					&::after
+						width: 22.5px
+						background-image: url(../img/icons/4.svg)
+				&_studs
+					&::after
+						height: 21px
+						background-image: url(../img/icons/5.svg)
+				&_teachs
+					&::after
+						height: 24px
+						background-image: url(../img/icons/6.svg)
+				&_ments
+					&::after
+						height: 19px
+						background-image: url(../img/icons/7.svg)
+				&_faq
+					&::after
+						background-image: url(../img/icons/8.svg)
+				&_sup
+					&::after
+						background-image: url(../img/icons/9.svg)
+										
+			&_link
+				font-size: 17px
+				font-weight: 500
+				color: #fff
+
 		.burger
+			position: absolute
+			right: 25px
+			top: 60px
+			transform: translateY(-50%)
+			width: 30px
+			height: 30px
+			span
+				display: block
+				height: 2px
+				width: 100%
+				background-color: #fff
+				margin-bottom: 8px
+				transition: 0.5s all
+			&_active
+
+				span
+					margin-bottom: -2px
+					&:first-child
+						transform: translateY(3px) rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:last-child
+						transform: translateY(3px) rotate(45deg)
 			img
 				width: 50%
 
@@ -155,7 +245,7 @@ p
 
 			input
 				padding: 10px 20px
-				margin: 30px 200px 0px 200px
+				margin: 30px 50px 0px 50px
 				font-size: 19px
 				font-weight: 400
 				border-radius: 5px
@@ -166,7 +256,7 @@ p
 		.personal_info
 
 			.text
-
+				margin-left: -50px
 				.online
 
 					&::after
@@ -175,6 +265,6 @@ p
 		.facult_info
 
 			&_item
-
+				margin-top: 35px
 				.link
 					font-size: 15px

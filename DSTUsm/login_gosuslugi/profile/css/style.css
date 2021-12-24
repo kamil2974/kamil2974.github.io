@@ -274,18 +274,18 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .header h2 {
-  text-align: center;
+  margin-left: 55px;
+  margin-right: auto;
   color: #fff;
 }
 .header .logo {
   width: 60px;
+  margin-left: 20px;
 }
 
 .content h3 {
@@ -331,6 +331,7 @@ p {
   color: #237E0D;
   position: relative;
   margin-top: 20px;
+  z-index: -1;
 }
 .content .personal_info .text .online::after {
   position: absolute;
@@ -364,7 +365,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 .content .facult_info_item .text {
   width: 250px;
@@ -413,6 +414,106 @@ p {
   .header .logo img {
     width: 100%;
   }
+  .header .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    padding: 100px 25px;
+    background-color: rgba(64, 78, 103, 0.9);
+    text-align: right;
+    list-style-type: none;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .header .menu_active {
+    right: 0;
+  }
+  .header .menu_item {
+    padding-right: 0;
+    border: none;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+  .header .menu_item::after {
+    position: absolute;
+    margin-left: 20px;
+    content: "";
+    width: 25px;
+    height: 25px;
+  }
+  .header .menu_item_lk::after {
+    width: 19px;
+    background-image: url(../img/icons/1.svg);
+  }
+  .header .menu_item_chats::after {
+    height: 23px;
+    background-image: url(../img/icons/2.svg);
+  }
+  .header .menu_item_news::after {
+    width: 12.74px;
+    background-image: url(../img/icons/3.svg);
+  }
+  .header .menu_item_events::after {
+    width: 22.5px;
+    background-image: url(../img/icons/4.svg);
+  }
+  .header .menu_item_studs::after {
+    height: 21px;
+    background-image: url(../img/icons/5.svg);
+  }
+  .header .menu_item_teachs::after {
+    height: 24px;
+    background-image: url(../img/icons/6.svg);
+  }
+  .header .menu_item_ments::after {
+    height: 19px;
+    background-image: url(../img/icons/7.svg);
+  }
+  .header .menu_item_faq::after {
+    background-image: url(../img/icons/8.svg);
+  }
+  .header .menu_item_sup::after {
+    background-image: url(../img/icons/9.svg);
+  }
+  .header .menu_link {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .header .burger {
+    position: absolute;
+    right: 25px;
+    top: 60px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+  }
+  .header .burger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 8px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .header .burger_active span {
+    margin-bottom: -2px;
+  }
+  .header .burger_active span:first-child {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .header .burger_active span:nth-child(2) {
+    display: none;
+  }
+  .header .burger_active span:last-child {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
   .header .burger img {
     width: 50%;
   }
@@ -438,13 +539,15 @@ p {
     color: #fff;
     background-color: #404E67;
   }
-  
   .content .personal_info .text {
     margin-left: -50px;
   }
   .content .personal_info .text .online::after {
     width: 10px;
     height: 10px;
+  }
+  .content .facult_info_item {
+    margin-top: 35px;
   }
   .content .facult_info_item .link {
     font-size: 15px;
